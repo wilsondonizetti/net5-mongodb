@@ -13,9 +13,9 @@ namespace app_mongo.Controllers
     public class MongoController : ControllerBase
     {
         private readonly MongoContext _context;
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<MongoController> _logger;
 
-        public MongoController(ILogger<WeatherForecastController> logger, MongoContext context)
+        public MongoController(ILogger<MongoController> logger, MongoContext context)
         {
             _context = context;
             _logger = logger;
